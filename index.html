@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The official student website for Mission San Jose High School DECA.">
+  <title>MSJ DECA | Build What's Next</title>
+  <link rel="stylesheet" href="style.css?v=20260811-2">
+  <script src="script.js?v=20260811-2" defer></script>
+  <style>
+    /* Kept here as a cache-safe fallback for the homepage achievements section. */
+    .achievements-section { padding: 6rem 0; overflow: hidden; background: #fff; }
+    .achievements-heading { display: grid; grid-template-columns: 1.1fr .9fr; gap: 2rem; align-items: end; margin-bottom: 2.5rem; }
+    .achievements-heading h2, .achievements-heading .lede { margin-bottom: 0; }
+    .achievement-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .achievement-stat { min-height: 190px; padding: 1.6rem; display: flex; flex-direction: column; justify-content: flex-end; color: #fff; background: linear-gradient(145deg, #06457f, #2c444c); border-radius: 12px; box-shadow: 0 14px 35px rgba(6,69,127,.11); }
+    .achievement-stat:nth-child(2) { background: linear-gradient(145deg, #0474c4, #06457f); }
+    .achievement-stat:nth-child(3) { background: linear-gradient(145deg, #2c444c, #1f343a); }
+    .achievement-stat strong { font-family: "Montserrat", "Manrope", sans-serif; font-size: clamp(2.1rem, 4vw, 3.7rem); line-height: 1; letter-spacing: -.05em; }
+    .achievement-stat span { margin-top: .7rem; color: #e6f1f4; font-weight: 700; }
+    .chapter-awards { display: grid; grid-template-columns: 1.15fr 1fr 1fr; gap: 1rem; align-items: stretch; margin-top: 1rem; }
+    .chapter-awards-intro, .award-item { padding: 1.4rem; border: 1px solid #d9e5f1; border-radius: 12px; }
+    .chapter-awards-intro { background: #f2f7fc; }
+    .chapter-awards-intro h3 { margin-bottom: 0; font-size: 1.25rem; }
+    .award-item { display: flex; align-items: center; gap: .8rem; background: #fff; }
+    .award-item span { color: #2c444c; font-size: 1.2rem; }
+    .award-item strong { line-height: 1.35; }
+    @media (max-width: 900px) { .achievements-heading, .chapter-awards { grid-template-columns: 1fr; } }
+    @media (max-width: 620px) { .achievements-section { padding: 4.2rem 0; } .achievement-stats { grid-template-columns: 1fr; } .achievement-stat { min-height: 155px; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="MSJ DECA home">
+        <span class="brand-mark" aria-hidden="true"></span><span class="brand-text">MSJ DECA</span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open navigation">☰</button>
+      <nav class="site-nav" data-site-nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-button" type="button" data-dropdown-button aria-expanded="false">Our Chapter <span>⌄</span></button>
+            <div class="dropdown-menu">
+              <a href="pages/mission.html">Mission Statement</a>
+              <a href="pages/officers.html">Officers</a>
+              <a href="pages/dlt.html">Diamond Leadership Team</a>
+              <a href="pages/dmt.html">Diamond Marketing Team</a>
+              <a href="pages/adviser.html">Meet Our Adviser</a>
+            </div>
+          </li>
+          <li><a class="nav-link" href="pages/programs.html">Programs</a></li>
+          <li><a class="nav-link" href="pages/faq.html">FAQ</a></li>
+          <li><a class="nav-link" href="pages/contact.html">Contact</a></li>
+          <li><a class="nav-link nav-cta" href="pages/login.html">Member Resources ↗</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="home-hero home-hero-layered">
+      <div class="container layered-hero">
+        <div class="hero-gallery" data-hero-gallery aria-label="MSJ DECA chapter photo gallery">
+          <div class="hero-slides">
+            <img class="hero-slide is-active" src="images/hero-1.jpg" alt="MSJ DECA members collaborating at a business event" data-gallery-slide>
+            <img class="hero-slide" src="images/hero-2.jpg" alt="MSJ DECA members participating in a chapter activity" data-gallery-slide>
+            <img class="hero-slide" src="images/hero-3.jpg" alt="MSJ DECA members preparing for competition" data-gallery-slide>
+          </div>
+          <div class="hero-gallery-label">Chapter gallery · <span data-gallery-count>1 / 3</span></div>
+        </div>
+
+        <div class="hero-accent" aria-hidden="true"></div>
+
+        <div class="hero-copy hero-copy-overlay">
+          <p class="eyebrow">Mission San Jose High School</p>
+          <h1>Compete.<br>Lead. Grow.</h1>
+          <p class="lede">Programs, preparation, and opportunities—all in one place for MSJ DECA members.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="pages/programs.html">Explore MSJ DECA</a>
+            <a class="button button-ghost-light" href="#chapter-updates">Latest events</a>
+          </div>
+
+          <div class="gallery-controls" aria-label="Gallery controls">
+            <button class="gallery-arrow" type="button" data-gallery-prev aria-label="Show previous image">←</button>
+            <div class="gallery-dots" aria-label="Choose gallery image">
+              <button class="gallery-dot is-active" type="button" data-gallery-dot="0" aria-label="Show gallery image 1" aria-current="true"></button>
+              <button class="gallery-dot" type="button" data-gallery-dot="1" aria-label="Show gallery image 2"></button>
+              <button class="gallery-dot" type="button" data-gallery-dot="2" aria-label="Show gallery image 3"></button>
+            </div>
+            <button class="gallery-arrow" type="button" data-gallery-next aria-label="Show next image">→</button>
+            <span class="gallery-note">Slow crossfade · pauses on hover</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container launchpad" id="chapter-updates" aria-label="Member launchpad">
+      <div class="schedule-card">
+        <div class="panel-heading"><h2>Coming up</h2><span>2026–27</span></div>
+        <article class="event-item">
+          <div class="event-date">SEP 05</div>
+          <div><p class="event-title">New member orientation</p><p class="event-detail">Replace with the official time and room.</p></div>
+          <span class="event-arrow" aria-hidden="true">→</span>
+        </article>
+        <article class="event-item">
+          <div class="event-date">SEP 12</div>
+          <div><p class="event-title">Competitive events workshop</p><p class="event-detail">Replace with the official time and room.</p></div>
+          <span class="event-arrow" aria-hidden="true">→</span>
+        </article>
+        <article class="event-item">
+          <div class="event-date">OCT 03</div>
+          <div><p class="event-title">Program applications due</p><p class="event-detail">Add the correct deadline and application link.</p></div>
+          <span class="event-arrow" aria-hidden="true">→</span>
+        </article>
+      </div>
+      <aside class="shortcut-card">
+        <div class="panel-heading"><h2>Member shortcuts</h2></div>
+        <a class="shortcut-link" href="pages/login.html?returnTo=resources.html"><span>Competition resources</span><span>→</span></a>
+        <a class="shortcut-link" href="pages/login.html?returnTo=quiz.html"><span>Find your DECA event</span><span>→</span></a>
+        <a class="shortcut-link" href="pages/programs.html"><span>Programs overview</span><span>→</span></a>
+        <a class="shortcut-link" href="pages/faq.html"><span>Frequently asked questions</span><span>→</span></a>
+      </aside>
+    </section>
+
+    <section class="section achievements-section" aria-labelledby="achievements-title">
+      <div class="container">
+        <div class="achievements-heading">
+          <div>
+            <p class="eyebrow">Chapter achievements</p>
+            <h2 id="achievements-title">Built by an ambitious community.</h2>
+          </div>
+          <p class="lede">A snapshot of MSJ DECA's membership, competitive reach, and chapter recognition.</p>
+        </div>
+
+        <div class="achievement-stats">
+          <article class="achievement-stat">
+            <strong>Largest</strong>
+            <span>club on the MSJ campus</span>
+          </article>
+          <article class="achievement-stat">
+            <strong>200+</strong>
+            <span>active members</span>
+          </article>
+          <article class="achievement-stat">
+            <strong>67</strong>
+            <span>ICDC qualifiers</span>
+          </article>
+        </div>
+
+        <div class="chapter-awards" aria-label="Chapter awards">
+          <div class="chapter-awards-intro">
+            <p class="eyebrow">Chapter awards</p>
+            <h3>Recognition earned together.</h3>
+          </div>
+          <!-- Replace these placeholder award names with the official titles when ready. -->
+          <article class="award-item"><span aria-hidden="true">◆</span><strong>Flora Is the Best Award</strong></article>
+          <article class="award-item"><span aria-hidden="true">◆</span><strong>Innovation Campaign Awards</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-mist">
+      <div class="container">
+        <div class="center">
+          <p class="eyebrow">Opportunities at MSJ</p>
+          <h2>Find your place in the chapter.</h2>
+          <p class="lede">Explore four MSJ programs that help students turn curiosity into practical business experience.</p>
+        </div>
+        <div class="program-grid" style="margin-top: 2.5rem;">
+          <article class="program-card"><span class="program-number">01</span><h3>Entrepreneurship Elective</h3><p>Learn business concepts by developing and presenting ideas in a classroom setting.</p><a class="text-link" href="pages/programs.html#entrepreneurship">Learn more →</a></article>
+          <article class="program-card"><span class="program-number">02</span><h3>HeadStart</h3><p>Replace this summary with the official description of HeadStart and who can participate.</p><a class="text-link" href="pages/programs.html#headstart">Learn more →</a></article>
+          <article class="program-card"><span class="program-number">03</span><h3>Spark</h3><p>Replace this summary with the official description of Spark and its student outcomes.</p><a class="text-link" href="pages/programs.html#spark">Learn more →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-blue">
+      <div class="container center">
+        <p class="eyebrow">Protected member tools</p>
+        <h2>Not sure which event fits you?</h2>
+        <p class="lede">Sign in with your school account and take the interactive cluster and event quiz.</p>
+        <a class="button button-light" href="pages/login.html?returnTo=quiz.html">Take the quiz</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><div class="footer-title">MSJ DECA</div><p class="footer-note">Mission San Jose High School · Fremont, California</p></div>
+      <div class="footer-links"><a href="pages/mission.html">Our Chapter</a><a href="pages/programs.html">Programs</a><a href="pages/faq.html">FAQ</a><a href="pages/contact.html">Contact</a><a href="pages/login.html">Resources</a></div>
+    </div>
+  </footer>
+</body>
+</html>

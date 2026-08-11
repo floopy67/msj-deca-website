@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title description">
+  <title id="title">Adviser photo placeholder</title>
+  <desc id="description">Blue and green placeholder for Mr. Liu's adviser photograph.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06457f"/>
+      <stop offset="1" stop-color="#2c444c"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#background)"/>
+  <circle cx="450" cy="415" r="170" fill="#a8c4ec" opacity=".9"/>
+  <path d="M150 1040c28-265 143-397 300-397s272 132 300 397" fill="#5379ae"/>
+  <rect x="210" y="1030" width="480" height="4" rx="2" fill="#a7c4bb"/>
+  <text x="450" y="1100" fill="#fff" font-family="Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">REPLACE WITH MR. LIU'S PHOTO</text>
+</svg>

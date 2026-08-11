@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 960" role="img" aria-labelledby="title description">
+  <title id="title">MSJ DECA chapter photo placeholder</title>
+  <desc id="description">Replace this file with an official chapter photograph.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#5379AE"/>
+      <stop offset="1" stop-color="#262B40"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="960" rx="48" fill="url(#background)"/>
+  <rect x="565" y="130" width="150" height="150" rx="18" fill="none" stroke="#A8C4EC" stroke-width="8" transform="rotate(45 640 205)"/>
+  <rect x="690" y="90" width="65" height="65" rx="10" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="6" transform="rotate(45 722 122)"/>
+  <circle cx="290" cy="365" r="108" fill="#A8C4EC" fill-opacity=".5"/>
+  <path d="M95 750C245 570 610 550 805 745V960H95Z" fill="#06457F" fill-opacity=".72"/>
+  <text x="450" y="800" fill="#fff" font-family="Arial, sans-serif" font-size="34" text-anchor="middle">Replace with your chapter photo</text>
+</svg>

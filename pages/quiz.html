@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex"><title>Find Your Event | MSJ DECA</title>
+  <link rel="stylesheet" href="../style.css"><script src="../script.js" defer></script><script type="module" src="../quiz.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span><span>MSJ DECA</span></a><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open navigation">☰</button><nav class="site-nav" data-site-nav><ul class="nav-list"><li><a class="nav-link" href="../index.html">Home</a></li><li><a class="nav-link" href="resources.html">Resources</a></li><li><a class="nav-link" href="faq.html">FAQ</a></li></ul></nav></div></header>
+  <main id="main-content">
+    <section class="page-hero"><div class="container center"><p class="eyebrow">Protected member tool</p><h1>Which event fits you?</h1><p class="lede">Answer six quick questions to find a DECA cluster and several events to explore.</p></div></section>
+    <section class="section"><div class="container">
+      <div class="quiz-shell" data-quiz-shell hidden>
+        <div class="account-bar"><div><div class="footer-note">Signed in as</div><div class="account-email" data-account-email></div></div><button class="button button-small" type="button" data-logout>Sign out</button></div>
+        <div class="quiz-progress" aria-hidden="true"><span data-quiz-progress></span></div>
+        <section class="quiz-card" data-quiz-card>
+          <p class="eyebrow" data-quiz-step>Question 1 of 6</p>
+          <h2 data-quiz-question></h2>
+          <div data-quiz-options></div>
+        </section>
+        <section class="quiz-result" data-quiz-result hidden>
+          <p class="eyebrow">Your strongest match</p><h2></h2>
+          <p data-result-description></p><p><strong>Events to explore:</strong> <span data-result-events></span></p>
+          <p class="footer-note" style="color:#dbeafa;">This quiz is a starting point, not an official event assignment. Confirm current event availability and requirements with MSJ DECA.</p>
+          <button class="button button-light button-small" type="button" data-quiz-restart>Retake quiz</button>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="../auth.js"></script>
+</body>
+</html>

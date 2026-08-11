@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex"><title>Member Resources | MSJ DECA</title>
+  <link rel="stylesheet" href="../style.css"><script src="../script.js" defer></script><script type="module" src="../resources.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span><span>MSJ DECA</span></a><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open navigation">☰</button><nav class="site-nav" data-site-nav><ul class="nav-list"><li><a class="nav-link" href="../index.html">Home</a></li><li><a class="nav-link" href="programs.html">Programs</a></li><li><a class="nav-link" href="faq.html">FAQ</a></li><li><a class="nav-link" href="quiz.html">Event Quiz</a></li></ul></nav></div></header>
+  <main id="main-content">
+    <div data-protected hidden>
+      <section class="page-hero"><div class="container"><p class="eyebrow">Members only</p><h1>Resource library.</h1><p class="lede">Find competition guides, workshop materials, templates, and chapter documents shared through school-restricted Google Drive.</p></div></section>
+      <section class="section"><div class="container">
+        <div class="account-bar"><div><div class="footer-note">Signed in as</div><div class="account-email" data-account-email></div></div><div class="hero-actions"><a class="button button-small" href="admin.html" data-admin-link hidden>Officer admin</a><button class="button button-small" type="button" data-logout>Sign out</button></div></div>
+        <div class="resource-toolbar">
+          <div class="field"><label for="resource-search">Search resources</label><input id="resource-search" type="search" placeholder="Try “role-play” or “finance”" data-resource-search></div>
+          <div class="field"><label for="resource-category">Category</label><select id="resource-category" data-resource-category><option value="">All categories</option></select></div>
+        </div>
+        <div class="resource-grid" data-resource-grid></div>
+        <div class="empty-state" data-empty-state>No matching resources were found.</div>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="../auth.js"></script>
+</body>
+</html>

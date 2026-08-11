@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 660" role="img" aria-labelledby="title description">
+  <title id="title">Team member photo placeholder</title>
+  <desc id="description">Replace this file with a portrait.</desc>
+  <rect width="600" height="660" fill="#A8C4EC"/>
+  <circle cx="300" cy="240" r="118" fill="#5379AE"/>
+  <path d="M80 660C90 470 190 400 300 400S510 470 520 660Z" fill="#06457F"/>
+  <text x="300" y="610" fill="#fff" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">Add portrait</text>
+</svg>
