@@ -4,7 +4,7 @@ import {
   signOut
 } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
 import { doc, getDoc } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
-import { auth, db, googleProvider } from "./firebase-config.js";
+import { auth, db, googleProvider } from "./firebase-config.js?v=20260812-1";
 
 const SCHOOL_DOMAIN = "@fusdk12.net";
 const PERSONAL_TESTER_EMAIL = "jiayuanfu23981@gmail.com";
