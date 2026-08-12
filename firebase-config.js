@@ -27,7 +27,6 @@ const db = getFirestore(app);
 const googleProvider = new GoogleAuthProvider();
 
 googleProvider.setCustomParameters({
-  hd: "fusdk12.net",
   prompt: "select_account"
 });
 
