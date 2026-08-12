@@ -9,7 +9,7 @@ const safePages = new Set(["resources.html", "quiz.html", "admin.html"]);
 const destination = safePages.has(requestedPage) ? requestedPage : "resources.html";
 
 if (params.get("error") === "domain") {
-  status.textContent = "That account is not a verified @fusdk12.net school account.";
+  status.textContent = "That Google account is not approved for member access.";
   status.classList.add("error");
 }
 
