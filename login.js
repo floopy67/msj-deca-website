@@ -1,4 +1,4 @@
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-auth.js";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
 import { auth, isSchoolAccount, loginWithSchoolGoogle } from "./auth.js";
 
 const loginButton = document.querySelector("[data-login]");
