@@ -12,6 +12,16 @@ service cloud.firestore {
         && request.auth.token.email.matches('.*@fusdk12[.]net$');
     }
 
+    function isApprovedPersonalTester() {
+      return isSignedIn()
+        && request.auth.token.email_verified == true
+        && request.auth.token.email == 'jiayuanfu23981@gmail.com';
+    }
+
+    function isMember() {
+      return isSchoolUser() || isApprovedPersonalTester();
+    }
+
     function isOfficerAdmin() {
       return isSchoolUser()
         && exists(/databases/$(database)/documents/admins/$(request.auth.uid))
@@ -19,7 +29,7 @@ service cloud.firestore {
     }
 
     match /resources/{resourceId} {
-      allow read: if isSchoolUser();
+      allow read: if isMember();
       allow create, update, delete: if isOfficerAdmin();
     }
 
