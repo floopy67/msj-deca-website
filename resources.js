@@ -3,7 +3,7 @@ import {
   getDocs,
   orderBy,
   query
-} from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
+} from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
 import { db, isOfficerAdmin, requireSchoolUser } from "./auth.js";
 
 const resourceGrid = document.querySelector("[data-resource-grid]");
