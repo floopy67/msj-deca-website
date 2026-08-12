@@ -1,5 +1,5 @@
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
-import { auth, isSchoolAccount, loginWithSchoolGoogle } from "./auth.js";
+import { auth, isSchoolAccount, loginWithSchoolGoogle } from "./auth.js?v=20260812-1";
 
 const loginButton = document.querySelector("[data-login]");
 const status = document.querySelector("[data-auth-status]");
