@@ -7,16 +7,25 @@ import { doc, getDoc } from "https://www.gstatic.com/firebasejs/12.17.1/firebase
 import { auth, db, googleProvider } from "./firebase-config.js";
 
 const SCHOOL_DOMAIN = "@fusdk12.net";
+const PERSONAL_TESTER_EMAIL = "jiayuanfu23981@gmail.com";
 
-function isSchoolAccount(user) {
+function isVerifiedSchoolAccount(user) {
   return Boolean(
     user?.emailVerified &&
     user.email?.toLowerCase().endsWith(SCHOOL_DOMAIN)
   );
 }
 
+function isSchoolAccount(user) {
+  const email = user?.email?.toLowerCase();
+  return Boolean(
+    user?.emailVerified &&
+    (email?.endsWith(SCHOOL_DOMAIN) || email === PERSONAL_TESTER_EMAIL)
+  );
+}
+
 async function isOfficerAdmin(user) {
-  if (!isSchoolAccount(user)) return false;
+  if (!isVerifiedSchoolAccount(user)) return false;
   const adminSnapshot = await getDoc(doc(db, "admins", user.uid));
   return adminSnapshot.exists() && adminSnapshot.data().active !== false;
 }
@@ -25,7 +34,7 @@ async function loginWithSchoolGoogle() {
   const credential = await signInWithPopup(auth, googleProvider);
   if (!isSchoolAccount(credential.user)) {
     await signOut(auth);
-    throw new Error("Please sign in with your @fusdk12.net school account.");
+    throw new Error("Please use a verified @fusdk12.net account or the approved tester account.");
   }
   return credential.user;
 }
@@ -45,7 +54,7 @@ function requireSchoolUser({ onAllowed, onDenied } = {}) {
 
     if (!isSchoolAccount(user)) {
       await signOut(auth);
-      onDenied?.("Only verified @fusdk12.net accounts can access this page.");
+      onDenied?.("Only verified school accounts and the approved tester account can access this page.");
       window.location.replace("login.html?error=domain");
       return;
     }
