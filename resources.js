@@ -4,7 +4,7 @@ import {
   orderBy,
   query
 } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
-import { db, isOfficerAdmin, requireSchoolUser } from "./auth.js";
+import { db, isOfficerAdmin, requireSchoolUser } from "./auth.js?v=20260812-1";
 
 const resourceGrid = document.querySelector("[data-resource-grid]");
 const emptyState = document.querySelector("[data-empty-state]");
