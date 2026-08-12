@@ -2,8 +2,8 @@ import {
   onAuthStateChanged,
   signInWithPopup,
   signOut
-} from "https://www.gstatic.com/firebasejs/12.17.1/firebase-auth.js";
-import { doc, getDoc } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
+} from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
+import { doc, getDoc } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
 import { auth, db, googleProvider } from "./firebase-config.js";
 
 const SCHOOL_DOMAIN = "@fusdk12.net";
