@@ -9,7 +9,7 @@ import {
   serverTimestamp,
   updateDoc
 } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
-import { db, isOfficerAdmin, requireSchoolUser } from "./auth.js";
+import { db, isOfficerAdmin, requireSchoolUser } from "./auth.js?v=20260812-1";
 
 const gate = document.querySelector("[data-admin-gate]");
 const workspace = document.querySelector("[data-admin-workspace]");
