@@ -1,4 +1,4 @@
-import { requireSchoolUser } from "./auth.js";
+import { requireSchoolUser } from "./auth.js?v=20260812-1";
 
 const questions = [
   {
